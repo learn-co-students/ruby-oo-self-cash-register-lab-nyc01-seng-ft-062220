@@ -38,6 +38,6 @@ class CashRegister
         last_transaction_quantity -= 1
         end
     end
-end  
+end   
 
 # binding.pry
