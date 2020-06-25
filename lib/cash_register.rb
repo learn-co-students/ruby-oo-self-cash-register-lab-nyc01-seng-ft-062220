@@ -3,7 +3,7 @@ require 'pry'
 class CashRegister
 
     attr_accessor :total, :items, :discount, :prices
-    attr_reader
+    
 
     def initialize(discount = 0)
         @total = 0.to_f
@@ -22,7 +22,8 @@ class CashRegister
         while i < quantity do
             @items << title
             i += 1 
-        end
+        end 
+        # ^^ this could have quantity times
     end
 
     def apply_discount
